@@ -43,9 +43,9 @@ body #mainScreen #content {
   flex-direction: column;
 }
 body #mainScreen #content #title {
+  display: inline-block;
   vertical-align: middle;
-  height: 12vh;
-  line-height: 8vh;
+  line-height: normal;
   font-size: 7vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -59,30 +59,31 @@ body #mainScreen #content #title:hover {
   background: rgba(255, 255, 255, 0.01);
 }
 body #mainScreen #content #sub {
+  display: inline-block;
   vertical-align: middle;
-  height: 5vh;
-  line-height: 5vh;
+  height: 7vh;
+  line-height: normal;
   font-size: 4vh;
 }
 body #mainScreen #content #buttons {
   display: flex;
-  height: 6vh;
+  height: 7vh;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
 }
 body #mainScreen #content #buttons button {
+  text-align: center;
   font-family: "Nunito", sans-serif;
   font-size: 1.5vh;
   font-weight: lighter;
   color: rgb(233, 230, 227);
-  width: 10vw;
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 1vh;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+  min-width: 15vw;
   transition: 0.2s;
 }
 body #mainScreen #content #buttons button:hover {
